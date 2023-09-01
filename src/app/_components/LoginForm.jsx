@@ -1,6 +1,7 @@
 import React from "react";
 import signIn from "@/firebase/auth/signin";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const LoginForm = () => {
     const [email, setEmail] = React.useState("");
@@ -48,7 +49,9 @@ const LoginForm = () => {
                     Login
                 </button>
             </form>
-            <p className="my-6 text-blue-400">Forgot Password?</p>
+            <Link href={"/resetpassword"} className="my-6 text-blue-400">
+                Forgot Password?
+            </Link>
             <hr className="mb-6" />
             <p className="mb-1">Sign in using</p>
             <div className="flex gap-3 justify-center">

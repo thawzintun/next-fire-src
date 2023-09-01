@@ -47,8 +47,8 @@ const SignUpForm = () => {
                 >
                     Sign Up
                 </button>
+                <hr className="mb-6" />
             </form>
-            <hr className="mb-6" />
             <p className="mb-1">Sign up using</p>
             <div className="flex gap-3 justify-center">
                 <div className="border rounded-md p-3 w-fit">
